@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+            let nota = parseFloat(prompt("Digite a nota do aluno: "));
+
+            if (IsNan(nota) || nota < 0 || nota > 10) {
+                console.log("Por favor, insira uma nota válida entre 0 e 10");
+                alert("Insira apenas números entre 0 e 10!");
+            } else if (nota>=7){
+                console.log("Aluno aprovado!!");
+            } else if(nota >=5 && nota <7){
+                console.log("Aluno está de recuperação.")
+            } else {
+                console.log("Aluno reprovado.")
+            }
+
+    </script>
+</head>
+<body>
+    <h1>AULA DIA 20/03/25</h1>
+</body>
+</html>
