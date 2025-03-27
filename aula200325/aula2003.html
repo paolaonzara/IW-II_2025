@@ -7,7 +7,7 @@
     <script>
             let nota = parseFloat(prompt("Digite a nota do aluno: "));
 
-            if (IsNan(nota) || nota < 0 || nota > 10) {
+            if (isNaN(nota) || nota < 0 || nota > 10) {
                 console.log("Por favor, insira uma nota válida entre 0 e 10");
                 alert("Insira apenas números entre 0 e 10!");
             } else if (nota>=7){
