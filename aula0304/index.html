@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+        function exibirMenu() {
+            return prompt(
+                "===== MENU INTERATIVO =====\n" +
+                "1 - Ver mensagem\n" +
+                "2 - Calcular média de notas\n" +
+                "3 - Sair\n" +
+                "Escolha uma opção:"
+            );
+        }
+
+        function executarOpcao(opcao) {
+            switch (opcao) {
+                case "1":
+                    alert("Olá! Bem-vindo ao menu interativo:D Para calcular a média de notas, digite 2!");
+                    break;
+                case "2":
+                    let nota1 = parseFloat(prompt("Digite o primeiro número:"));
+                    let nota2 = parseFloat(prompt("Digite o segundo número:"));
+                    if (isNaN(nota1) || isNaN(nota2) || nota1>10 || nota1<0 || nota2>10 || nota2<0)  {
+                        alert("Erro: Você deve digitar apenas números e devem ser números de 0 à 10!");
+                    } else {
+                        let media= (nota1 + nota2) / 2;
+                        let situacaoaluno;
+                           
+                        if (media >= 7) {
+                            situacaoaluno = "Aprovado ";
+                        } else if (media >= 5) {
+                            situacaoaluno = "Recuperação";
+                        } else {
+                            situacaoaluno = "Reprovado";
+                        }
+                    
+                            alert("A média do aluno é: " + media + " e sua situação é: " + situacaoaluno);
+                    }
+                        
+
+                    break;
+                case "3":
+                    alert("Saindo... Até mais!");
+                    return false; // Encerra o loop
+                default:
+                    alert("Opção inválida. Tente novamente.");
+            }
+            return true; // Continua o loop
+        }
+
+            let continuar = true;
+            while (continuar) {
+                let opcao = prompt("Digite uma opção:\n1 - Sobre\n2 - Calcular Média\n3 - Sair");
+                continuar = executarOpcao(opcao);
+        }
+
+        // Inicia o menu quando a página carregar
+        iniciarMenu();
+    </script>
+</head>
+<body>
+    <h1>Aula IW- 03/04</h1>
+</body>
+</html>
