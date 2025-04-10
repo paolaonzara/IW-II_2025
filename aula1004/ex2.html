@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+        //o usuario digita a idade com numero inteiro definindo o valor
+        let idade = parseInt(prompt("Digite sua idade: "));
+//confirmo se ele dgitou em numero mesmo
+        if(isNaN(idade)){
+            console.log("Digite apenas números!");
+            alert("Digite apenas números!");
+        } else if(idade>=18){
+            console.log("É um adulto");
+        } else{
+            console.log("É menor de idade");
+        }
+//depois coloco que se a idade é maior ou igual a 18 entao é um adulto
+//com o else deixa entendido que qualquer resultado diferente significa que é menor de idade
+    </script>
+
+</head>
+<body>
+    <h1>Verificação de Idade</h1>
+</body>
+</html>

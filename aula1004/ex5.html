@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+//o num é definido quando o usuario o digita como mnumero inteiro
+        let num = parseInt(prompt("Digite um número: "));
+//faço a confirmação se o que o usuario digitou é um numero mesmo
+        if(isNaN(num)){
+            console.log("Digite apenas números!");
+            alert("Digite apenas números!");
+        } else{
+                for(let i=1; i<=10; i++){
+                    console.log(num+"x"+i+"= " + num*i)
+                }
+        }
+//passado a confirmação eu defino o valor de i e faço ele ir somando mais 1 ao seu valor
+//limito que essa repetição aconteca até o valor de 10 se não o loop fica infinito e para tabuada ser de 1 a 10
+//depois faço concatenação colocando o numero que o usuario digitou, mais o simbolo de multiplicação e o simbolo de igual
+//no resultado após o simbolo de igual eu coloco o valor que o usuario digitou vezes o valor de i
+//ele vai multiplicar i até o i parar de somar a 1 como foi definido anteriormente
+    </script>
+
+
+</head>
+<body>
+    <h1>Tabela de Multiplicação</h1>
+</body>
+</html>

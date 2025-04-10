@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+        //o usuario digita o numero definindo o valor
+        let numero = parseFloat(prompt("Digite o número: "));
+
+        
+        //confirmo se o que o usuario digitou é um numero mesmo
+        if(isNaN(numero)){
+            console.log("Por favor insira apenas números!");
+            alert("Insira apenas números!");
+        } else if(numero%2==0){
+            console.log("Este número é par.")
+        } else{
+            console.log("Este número é ímpar.")
+        }
+        //depois eu divido por dois com o modulo, e se o modulo for 0 é porque é par
+        //depois coloco o else, que significa que qualquer resultado diferente é impar
+
+    </script>
+</head>
+<body>
+    <h1>Par ou Impar</h1>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+
+//o usuario digita um numero inteiro definindo o valor e confirmo com o isNaN se ele digitou numeros mesmo
+        let num = parseInt(prompt("Digite um número: "))
+        if(isNaN(num)){
+            console.log("Digite apenas números!");
+            alert("Digite apenas números!")
+        } else{
+            while( num>=0 ){
+                console.log(num);
+                num--
+            }
+        }
+//depois eu coloco que enquanto o numero digitado for maior ou igual a zero ele vai subtrair 1
+//isso é importante se não o loop fica infinito
+//o numero é subtraido com o operador--  que tira 1 do valor anteriormente digitado pelo usuario
+
+
+    </script>
+
+</head>
+<body>
+    <h1>Contagem regressiva</h1>
+</body>
+</html>
